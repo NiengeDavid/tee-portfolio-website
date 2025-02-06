@@ -14,7 +14,7 @@
 
 <br>
 
-[![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://vatsalsinghkv.vercel.app/)
+[![My Portfolio](https://github.com/user-attachments/assets/e14c3563-6892-47eb-a00a-14c282e9eda0)
 
 ## Table of Contents
 
