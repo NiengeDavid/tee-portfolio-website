@@ -1,8 +1,8 @@
 <h1 align="center">
-  vatsalsinghkv.vercel.app
+  tavershimaachir.com.ng
 </h1>
 <p align="center">
-  A portfolio website i.e. <a href="https://vatsalsinghkv.vercel.app" target="_blank">vatsalsinghkv.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
+  A portfolio website i.e. <a href="https://tavershimaachir.com.ng" target="_blank">tavershimaachir.com.ng</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
 <p align="center">
@@ -51,7 +51,7 @@
 
 1. Fork this repository and clone the project
 
-###### Please give me proper credit by linking back to [vatsalsinghkv.vercel.app](https://vatsalsinghkv.vercel.app).
+###### Please give me proper credit by linking back to [tavershimaachir.com.ng](https://tavershimaachir.com.ng).
 
 ```bash
   git clone https://github.com/<YOUR USERNAME>/portfolio-website.git
@@ -85,7 +85,7 @@
 
 ## Contributing
 
-###### Join Our Discord: [https://discord.gg/St2dHg9YwA](https://discord.gg/St2dHg9YwA)
+###### Join the Discord: [https://discord.gg/St2dHg9YwA](https://discord.gg/St2dHg9YwA)
 
 Remember, Good PR makes you a Good contributor!
 
@@ -110,15 +110,16 @@ Remember, Good PR makes you a Good contributor!
 ## Contact
 
 - Discord - [https://discord.gg/St2dHg9YwA](https://discord.gg/St2dHg9YwA)
-- Website - [vatsalsinghkv.vercel.app](https://vatsalsinghkv.vercel.app)
-- Github - [@vatsalsinghkv](https://github.com/vatsalsinghkv)
-- LinkedIn - [@vatsalsinghkv](https://www.linkedin.com/in/vatsalsinghkv/)
-- Twitter - [@vatsalsinghkv](https://www.twitter.com/vatsalsinghkv)
-- Instagram - [@vatsalsinghkv](https://www.instagram.com/vatsalsinghkv)
-- Facebook - [@vatsalsinghkv](https://www.facebook.com/vatsal.singh.kv)
+- Website - tavershimaachir.com.ng](https://tavershimaachir.com.ng)
+- Github - [@NiengeDavid](https://github.com/NiengeDavid)
+- LinkedIn - [@niengedavid](https://www.linkedin.com/in/nienge-david-6b5508221/))
+- Twitter - [@niengedavid](https://twitter.com/niengedavid)
+- Instagram - [@niengedavid](https://www.instagram.com/nienge_david)
+- Facebook - [@niengedavid](https://facebook.com/nienge.david)
 
 ## Acknowledgements
 
+- [https://github.com/vatsalsinghkv/portfolio-website](https://github.com/vatsalsinghkv/portfolio-website) - Forked from @vatsalsinghkv
 - [https://developer-portfolio-1hanzla100.vercel.app/](https://developer-portfolio-1hanzla100.vercel.app/) - Design Inspiration
 - [https://brittanychiang.com/](https://brittanychiang.com/) - Design Inspiration
 - [https://dev.to/andrewchmr/awesome-animated-cursor-with-react-hooks-5ec3](https://dev.to/andrewchmr/awesome-animated-cursor-with-react-hooks-5ec3) - Cursor Animation Inspiration
@@ -127,4 +128,4 @@ Remember, Good PR makes you a Good contributor!
 
 Give a ⭐️ if you liked this project!
 
-[Scroll to Top](#--vatsalsinghkvvercelapp)
+[Scroll to Top](#--tavershimaachircomng)
