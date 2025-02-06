@@ -2,35 +2,28 @@ import {
   About,
   Contact,
   Experience,
-  // FeaturedProjects,
   Hero,
   Layout,
-  // Projects,
   Skills,
 } from '@/containers';
 
-import type { NextPage } from 'next';
-
 /**
- * TODO: Create separate page for all the projects with filters (vercel | netlify | github api for automation)
- * TODO: Switch to next13 app dir feature, when lottie files start working in app dir
- * TODO: Try test cases
+ * TODO:
+ * - Create a separate projects page with filters (use Vercel, Netlify, or GitHub API for automation)
+ * - Migrate to Next.js App Router (`app/`) once Lottie files are fully compatible
+ * - Implement test cases
  */
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <>
-      <Layout>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        {/* <FeaturedProjects /> */}
-        {/* <Projects /> */}
-        <Contact />
-      </Layout>
-    </>
+    <Layout>
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      {/* <FeaturedProjects /> */}
+      {/* <Projects /> */}
+      <Contact />
+    </Layout>
   );
-};
-
-export default Home;
+}
