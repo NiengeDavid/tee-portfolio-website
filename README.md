@@ -110,7 +110,7 @@ Remember, Good PR makes you a Good contributor!
 ## Contact
 
 - Discord - [https://discord.gg/St2dHg9YwA](https://discord.gg/St2dHg9YwA)
-- Website - tavershimaachir.com.ng](https://tavershimaachir.com.ng)
+- Website - [tavershimaachir.com.ng](https://tavershimaachir.com.ng)
 - Github - [@NiengeDavid](https://github.com/NiengeDavid)
 - LinkedIn - [@niengedavid](https://www.linkedin.com/in/nienge-david-6b5508221/))
 - Twitter - [@niengedavid](https://twitter.com/niengedavid)
