@@ -14,33 +14,28 @@ import { useEffect, useState } from 'react';
 
 /**
  * Hides the navbar while scrolling down
- * @param {Object} config
- * @param {String} [config.id=navbar] - id of navbar
- * @param {Number} [config.offset=100] - offset of navbar in px
  */
+const useHideNavOnScroll = (id = 'navbar', offset = 100, when = true) => {
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof document === 'undefined')
+      return;
 
-const hideNavWhileScrolling = ({
-  id = 'navbar',
-  offset = 100,
-  when = true,
-}: {
-  id?: string;
-  offset?: number;
-  when: boolean;
-}) => {
-  const nav = document.getElementById(id);
-  if (!nav) return;
+    const nav = document.getElementById(id);
+    if (!nav) return;
 
-  let prevScrollPos = window.pageYOffset;
+    let prevScrollPos = window.pageYOffset;
 
-  window.onscroll = () => {
-    if (when) {
+    const handleScroll = () => {
       const curScrollPos = window.pageYOffset;
-      if (prevScrollPos < curScrollPos) nav.style.top = `-${offset}px`;
-      else nav.style.top = '0';
+      if (when) {
+        nav.style.top = prevScrollPos < curScrollPos ? `-${offset}px` : '0';
+      }
       prevScrollPos = curScrollPos;
-    }
-  };
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [id, offset, when]);
 };
 
 type NavItemsProps = {
@@ -79,9 +74,7 @@ const Navbar = () => {
   const md = getBreakpointsWidth('md');
   const ANIMATION_DELAY = windowWidth <= md ? 0 : 0.8;
 
-  useEffect(() => {
-    hideNavWhileScrolling({ when: !navbarCollapsed });
-  }, [navbarCollapsed]);
+  useHideNavOnScroll('navbar', 100, !navbarCollapsed);
 
   return (
     <motion.header

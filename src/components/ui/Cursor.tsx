@@ -9,21 +9,17 @@ const Cursor = ({ className = '' }: Props) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    addEventListeners();
-    return () => removeEventListeners();
-  }, []);
+    if (typeof document === 'undefined') return; // Ensure this runs only on the client
 
-  const addEventListeners = () => {
+    const onMouseMove = (e: MouseEvent) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
     document.addEventListener('mousemove', onMouseMove);
-  };
-
-  const removeEventListeners = () => {
-    document.removeEventListener('mousemove', onMouseMove);
-  };
-
-  const onMouseMove = (e: MouseEvent) => {
-    setPosition({ x: e.clientX, y: e.clientY });
-  };
+    return () => {
+      document.removeEventListener('mousemove', onMouseMove);
+    };
+  }, []);
 
   return (
     <div

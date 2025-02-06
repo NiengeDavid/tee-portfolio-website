@@ -1,69 +1,44 @@
 'use client';
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 
 const initialState = {
   isDarkMode: false,
-  toggle: () => {
-    return;
-  },
-  enableDarkMode: (_: boolean) => {
-    return;
-  },
-  disableDarkMode: (_: boolean) => {
-    return;
-  },
+  toggle: () => {},
+  enableDarkMode: () => {},
+  disableDarkMode: () => {},
 };
 
 const ThemeContext = createContext(initialState);
 
-export default function ThemeProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(
-    typeof window !== 'undefined' &&
-      JSON.parse(localStorage.getItem('darkMode') || 'true')
-      ? true
-      : false
-  );
+export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const [isDarkMode, setIsDarkMode] = useState(false); // Default to false initially
+  const [isMounted, setIsMounted] = useState(false); // Track hydration
 
-  const toggle = useCallback(() => {
-    setIsDarkMode((prev) => !prev);
-  }, []);
-
-  const enableDarkMode = useCallback(() => {
-    setIsDarkMode(true);
-  }, []);
-
-  const disableDarkMode = useCallback(() => {
-    setIsDarkMode(false);
+  useEffect(() => {
+    setIsMounted(true);
+    const storedTheme = localStorage.getItem('darkMode');
+    if (storedTheme !== null) {
+      setIsDarkMode(JSON.parse(storedTheme));
+    }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    if (isMounted) {
+      localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     }
-  }, [isDarkMode]);
+  }, [isDarkMode, isMounted]);
+
+  const toggle = useCallback(() => setIsDarkMode((prev) => !prev), []);
+  const enableDarkMode = useCallback(() => setIsDarkMode(true), []);
+  const disableDarkMode = useCallback(() => setIsDarkMode(false), []);
 
   return (
-    <ThemeContext.Provider
-      value={{
-        isDarkMode,
-        toggle,
-        enableDarkMode,
-        disableDarkMode,
-      }}
-    >
+    <ThemeContext.Provider value={{ isDarkMode, toggle, enableDarkMode, disableDarkMode }}>
       {children}
     </ThemeContext.Provider>
   );
