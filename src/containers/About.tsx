@@ -24,32 +24,33 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Vatsal Singh, a first-year MCA student at{' '}
+            Hi, my name is Tavershima Achir, a digital markerter and Business
+            Relation Officer at{' '}
             <Link
-              href="https://bhu.ac.in/"
+              href="https://www.moniepoint.com"
               target="_blank"
               className="text-accent"
             >
-              Banaras Hindu University
+              Moniepoint Inc
             </Link>
-            .<br /> I'm an Artist as well as crazy full stack web developer who
-            wants to explore every tech stack.
+            .<br /> I'm a strong advocate for entrepreneurial mindset, dedicated
+            to exploring innovative business opportunities and fostering
+            sustainable growth
           </p>
           <p>
-            Fast-forward to today, and I've had the privilege of working at a
-            start-up -{' '}
+            Fast-forward to today, and I've had the privilege of working as CEO
+            at -{' '}
             <Link
-              href="https://www.pixelwand.live/"
+              href="https://www.facebook.com/tlogmedia"
               target="_blank"
               className="text-accent"
             >
-              Pixelwand
+              TLOG Digitals
             </Link>
             .
           </p>
           <p>
-            My main focus these days is learning mobile development and finding
-            a decent job.
+            My main focus these days is learning new digital skills and expanding my knowledge in IT.
           </p>
 
           {list && (

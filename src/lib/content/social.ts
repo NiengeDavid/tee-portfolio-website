@@ -4,8 +4,8 @@ import { SocialSectionType } from '@/lib/types/sections';
 export const socialSection: SocialSectionType = {
   socialLinks: [
     {
-      icon: 'tabler:brand-github',
-      url: socialLinks.github,
+      icon: 'tabler:brand-youtube',
+      url: socialLinks.youtube,
     },
     {
       icon: 'mdi:instagram',

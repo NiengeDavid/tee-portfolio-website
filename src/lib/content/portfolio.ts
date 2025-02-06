@@ -7,33 +7,36 @@
 import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
-  facebook: 'https://www.facebook.com/vatsalsinghkv',
-  instagram: 'https://www.instagram.com/vatsalsinghkv',
-  twitter: 'https://twitter.com/vatsalsinghkv',
-  github: 'https://github.com/vatsalsinghkv',
-  linkedin: 'https://www.linkedin.com/in/vatsalsinghkv/',
+  facebook: 'https://facebook.com/tavershimaachir',
+  instagram: 'https://www.instagram.com/achirtavershima',
+  twitter: 'https://x.com/achirtavershima',
+  youtube: 'https://youtube.com/@tavershimaachir1118',
+  linkedin: 'https://www.linkedin.com/in/achirtavershima/',
 };
 
 export const author = {
-  name: 'Vatsal Singh',
-  email: 'vatsalsinghkv@gmail.com',
+  name: 'Tavershima Achir',
+  email: 'achirtavershima@gmail.com',
 };
 
 export const seoData = {
-  title: 'Vatsal Singh | Front-End Developer',
+  title: 'Tavershima Achir | Digital Markerter',
   description:
-    'Vatsal Singh is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Tavershima Achir is a results-driven IT, Tech, and Business Lead professional with a strong background in digital banking, sales, and technology-driven business solutions.',
   author: author.name,
   image:
-    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
-  url: 'https://vatsalsinghkv.vercel.app/',
+    'https://github.com/user-attachments/assets/e14c3563-6892-47eb-a00a-14c282e9eda0',
+  url: 'https://tavershimaachir.com.ng/',
   keywords: [
-    'Vatsal',
-    'Vatsal Singh',
-    '@vatsalsinghkv',
-    'vatsalsinghkv',
+    'tavershima',
+    'tavershima achir',
+    '@tavershimaachir',
+    'tavershimaachir',
     'Portfolio',
-    'Vatsal Portfolio ',
-    'Vatsal Singh Portfolio',
+    'tavershima Portfolio ',
+    'tavershima achir Portfolio',
+    'tavershima caleb achir',
+    'caleb achir',
+    'achir',
   ],
 };
