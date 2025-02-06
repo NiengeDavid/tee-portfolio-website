@@ -1,3 +1,5 @@
+'use client';
+
 import { SkillsSectionType } from '@/lib/types/sections';
 import { getId } from '@/lib/utils/helper';
 
