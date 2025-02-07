@@ -1,5 +1,11 @@
-import { Button, ShowLottie } from '@/components';
+'use client';
+
+import dynamic from 'next/dynamic';
+import { Button } from '@/components';
 import { Layout } from '@/containers';
+const ShowLottie = dynamic(() => import('@/components/ui/ShowLottie'), {
+  ssr: false, // Disable server-side rendering for this component
+});
 
 export const metadata = {
   title: '404 - Page Not Found',
