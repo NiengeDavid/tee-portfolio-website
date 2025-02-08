@@ -71,7 +71,7 @@ export const experienceSection: ExperienceSectionType = {
     {
       company: 'NASCO HPL',
       companyUrl: 'https://nasco.com.ng',
-      role: 'Head IT Department',
+      role: 'Quality Control Officer',
       started: '2011',
       upto: '2012',
       tasks: [
