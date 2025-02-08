@@ -25,7 +25,7 @@ const About = () => {
         <div className="space-y-4 lg:w-3/5">
           <p>
             Hi, my name is Tavershima Achir, a digital markerter and Business
-            Relation Officer at{' '}
+            Relationship Manager at{' '}
             <Link
               href="https://www.moniepoint.com"
               target="_blank"
@@ -50,7 +50,8 @@ const About = () => {
             .
           </p>
           <p>
-            My main focus these days is learning new digital skills and expanding my knowledge in IT.
+            My primary focus right now is acquiring new digital skills and
+            deepening my knowledge in IT.
           </p>
 
           {list && (
