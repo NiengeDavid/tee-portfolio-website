@@ -1,9 +1,13 @@
 'use client';
-import { TabList } from '@/components';
+import dynamic from 'next/dynamic';
 
 import { experienceSection } from '../lib/content/experience';
 import { getSectionAnimation } from '../styles/animations';
 import { motion } from 'framer-motion';
+
+const TabList = dynamic(() => import('@/components/lists/TabList'), {
+  ssr: false,
+});
 
 const Experience = () => {
   return (

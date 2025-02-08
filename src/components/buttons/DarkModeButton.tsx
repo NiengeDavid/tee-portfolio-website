@@ -1,5 +1,11 @@
 'use client';
+
+import dynamic from 'next/dynamic';
 import { useTheme } from '@/lib/hooks/use-theme';
+
+// const useTheme = dynamic(() => import('@/lib/hooks/use-theme'), {
+//   ssr: false,
+// });
 
 import { Icon } from '@iconify/react';
 import { motion, MotionProps } from 'framer-motion';

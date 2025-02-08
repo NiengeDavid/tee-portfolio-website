@@ -1,4 +1,10 @@
-import { Email, Footer, Navbar, Social } from '@/containers';
+import dynamic from 'next/dynamic'
+import { Email, Footer, Social } from '@/containers';
+
+const Navbar= dynamic(
+  () => import('@/containers/layout/Navbar'),
+  { ssr: false }
+)
 
 type Props = {
   children: React.ReactNode;
